@@ -20,11 +20,11 @@ interface SimpleMapProps {
 
 export const SimpleMap: React.FC<SimpleMapProps> = ({ reports }) => {
   return (
-    <div className="h-full w-full bg-gradient-to-br from-blue-50 to-green-50 p-4 flex flex-col">
-      <div className="text-center mb-4">
-        <div className="flex items-center justify-center gap-2 mb-2">
-          <MapPin className="h-8 w-8 text-primary" />
-          <h2 className="text-xl font-bold">Live Theft Alert Map</h2>
+    <div className="h-full w-full bg-gradient-to-br from-blue-50 to-green-50 p-2 sm:p-4 flex flex-col">
+      <div className="text-center mb-2 sm:mb-4">
+        <div className="flex items-center justify-center gap-2 mb-1 sm:mb-2">
+          <MapPin className="h-6 w-6 sm:h-8 sm:w-8 text-primary" />
+          <h2 className="text-lg sm:text-xl font-bold">Live Theft Alert Map</h2>
         </div>
         <p className="text-muted-foreground">Interactive map coming soon - showing reports below</p>
       </div>

@@ -161,11 +161,11 @@ const Index = () => {
       </header>
 
       {/* Main Content */}
-      <main className="relative">
-        <Tabs value={activeTab} onValueChange={setActiveTab}>
+      <main className="relative w-full overflow-x-hidden">
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
           {/* Tab Navigation */}
-          <div className="bg-card border-b border-border px-4">
-            <TabsList className="grid w-full max-w-md mx-auto grid-cols-3">
+          <div className="bg-card border-b border-border px-2 sm:px-4">
+            <TabsList className="grid w-full max-w-md mx-auto grid-cols-3 text-xs sm:text-base">
               <TabsTrigger value="map" className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
                 Map
